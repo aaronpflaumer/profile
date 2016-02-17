@@ -7,7 +7,7 @@ header('Content-type: application/json');
 require 'php-mailer/class.phpmailer.php';
 
 // Your email address
-$to = 'youremail@yourserver.com';
+$to = 'aaronpflaumer@gmail.com';
 
 $subject = $_POST['subject'];
 
@@ -15,7 +15,7 @@ if($to) {
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	
+
 	$fields = array(
 		0 => array(
 			'text' => 'Name',
@@ -30,17 +30,17 @@ if($to) {
 			'val' => $_POST['message']
 		)
 	);
-	
+
 	$message = "";
-	
+
 	foreach($fields as $field) {
 		$message .= $field['text'].": " . htmlspecialchars($field['val'], ENT_QUOTES) . "<br>\n";
 	}
-	
+
 	$mail = new PHPMailer;
 
 	$mail->IsSMTP();                                      // Set mailer to use SMTP
-	
+
 	// Optional Settings
 	//$mail->Host = 'mail.yourserver.com';				  // Specify main and backup server
 	//$mail->SMTPAuth = true;                             // Enable SMTP authentication
@@ -54,7 +54,7 @@ if($to) {
 	$mail->AddReplyTo($email, $name);
 
 	$mail->IsHTML(true);                                  // Set email format to HTML
-	
+
 	$mail->CharSet = 'UTF-8';
 
 	$mail->Subject = $subject;
@@ -64,10 +64,10 @@ if($to) {
 
 	if(!$mail->Send()) {
 	   $arrResult = array ('response'=>'error');
-	}	
+	}
 
 	echo json_encode($arrResult);
-	
+
 } else {
 
 	$arrResult = array ('response'=>'error');
