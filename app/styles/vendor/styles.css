@@ -4,7 +4,7 @@
 Project:  Cards - Personal vCard, Resume/CV & Portfolio
 Author: Diego Pereira @ DotRex
 Version:  1.1
-Last change:  30/09/15 
+Last change:  30/09/15
 Primary use:  Vcard / Personal / CV / Resume / Portfolio
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -66,12 +66,12 @@ Primary use:  Vcard / Personal / CV / Resume / Portfolio
   padding-bottom: 20px;
 }
 /* ==========================================================
-! 02. GENERAL 
+! 02. GENERAL
 ========================================================== */
 body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
-  background: url('../img/bg1.jpg') no-repeat center center fixed;
+  background: url('../../images/bg1.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -402,7 +402,7 @@ iframe {
   width: 99%;
   margin: 0 auto;
   overflow-y: scroll;
-  background: url('../img/bg-card2.png') repeat-x right top #f4f4f4;
+  background: url('../../images/bg-card2.png') repeat-x right top #f4f4f4;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -647,7 +647,7 @@ iframe {
   border: none;
   height: 1px;
   width: 100%;
-  background: url('../img/hr1.png') no-repeat center center;
+  background: url('../../images/hr1.png') no-repeat center center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -657,7 +657,7 @@ iframe {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   padding: 10px;
-  background: url('../img/bg-btn.png') no-repeat center center #08aeac;
+  background: url('../../images/bg-btn.png') no-repeat center center #08aeac;
 }
 .vcard-profile-description-ft-item p {
   margin-bottom: 0;
@@ -786,7 +786,7 @@ iframe {
   font-weight: bold;
 }
 .testimonial-content {
-  background: url('../img/bgmask2.png') no-repeat center center #08aeac;
+  background: url('../../images/bgmask2.png') no-repeat center center #08aeac;
   color: #ffffff;
   padding: 20px;
   border-radius: 10px;
@@ -1021,7 +1021,7 @@ iframe {
   -moz-transform: translateY(0px);
 }
 .project-item a {
-  cursor: url('../img/projects2.cur'), projetos !important;
+  cursor: url('../../images/projects2.cur'), projetos !important;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -1149,8 +1149,8 @@ span.see-more {
   text-decoration: none;
 }
 .blog-item-thumb a {
-  cursor: url('../img/projects.cur'), projetos !important;
-  -moz-cursor: url('../img/projects.cur'), projetos !important;
+  cursor: url('../../images/projects.cur'), projetos !important;
+  -moz-cursor: url('../../images/projects.cur'), projetos !important;
 }
 .blog-item-thumb img {
   width: 100%;
@@ -1328,7 +1328,7 @@ span.see-more {
   left: 0;
   width: 100%;
   height: 100%;
-  cursor: url('../img/projects.cur'), projetos !important;
+  cursor: url('../../images/projects.cur'), projetos !important;
 }
 /* ==========================================================
 ! 17. SECTION: Contact
